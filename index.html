@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/main.min.css">
+    
+    <title></title>
+</head>
+<body>
+	<nav class="nav" id="nav">
+	    <div class="container">
+	        <div class="nav__wrap">
+	            <ul>
+	                <li><a href="#home">Главная</a></li>
+	                <li><a href="#teather">О театре</a></li>
+	                <li><a href="#production">Наши постановки</a></li>
+	                <li><a href="#partners">Партнеры театра</a></li>
+	                <li><a href="#contacts">Контакты</a></li>
+	            </ul>
+	            <div class="nav__burger" id="burger">
+	                <svg width="28" height="20" viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg">
+	                    <rect x="0.7" y="8.3" class="st0" width="20" height="3.3"/>
+	                    <rect x="0.7" class="st0" width="26.7" height="3.3"/>
+	                    <rect x="0.7" y="16.7" class="st0" width="12.1" height="3.3"/>
+	                </svg>
+	            </div>
+	            <a class="nav__tel" href="tel:+74951234567">
+	                +7 495 123-45-67
+	            </a>
+	        </div>
+	    </div>
+	    <div class="nav__collapse">
+	        <svg id="times" width="28" height="20" viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg">
+	            <path d="M16,1.4L14.6,0L8,6.6L1.4,0L0,1.4L6.6,8L0,14.6L1.4,16L8,9.4l6.6,6.6l1.4-1.4L9.4,8L16,1.4z"/>
+	        </svg>
+	        <ul>
+	            <li><a href="#home">Главная</a></li>
+	            <li><a href="#teather">О театре</a></li>
+	            <li><a href="#production">Наши постановки</a></li>
+	            <li><a href="#partners">Партнеры театра</a></li>
+	            <li><a href="#contacts">Контакты</a></li>
+	        </ul>
+	        <div class="nav__collapse-social">
+	            <div>
+	                <a href="#">
+	                    <i class="fab fa-instagram"></i>
+	                </a>
+	                <a href="#">
+	                    <i class="fab fa-facebook-f"></i>
+	                </a>
+	            </div>
+				<div>
+	                <a href="#">
+	                    <i class="fab fa-vk"></i>
+	                </a>
+	                <a href="#">
+	                    <i class="fab fa-youtube"></i>
+	                </a>
+	            </div>
+	        </div>
+	    </div>
+	</nav>
+	<div class="nav__overlay"></div>
+	<header class="header" id="home" style="background: linear-gradient(0deg, rgba(51, 51, 51, 0.85), rgba(51, 51, 51, 0.85)), url('img/bg01.jpg') center/cover;">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 offset-md-1 col-md-10 col-lg-7 offset-lg-0 col-xl-6">
+					<h1>Большой театр</h1>
+					<p>
+						Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах, с 1886 года — Петербургская консерватория. Первое постоянное в Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных зданий в Европе XVIII.
+					</p>
+					<button class="header__button">Афиша</button>
+				</div>
+				<div class="offset-xl-1 col-5 d-none d-lg-block">
+					<div class="header__slider">
+						<div class="header__slide prev"></div>
+						<div class="header__slide active"></div>
+						<div class="header__slide passive"></div>
+						<div class="header__slide next"></div>
+					</div>
+					<div class="header__slider-btn-wrap">
+						<div class="header__slider-btn" data-direction="prev" onclick="switchSlide(this)">
+							<svg width="41" height="16" viewBox="0 0 41 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path class="slider-arrow" d="M0.292892 7.2929C-0.0976296 7.68342 -0.0976295 8.31659 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928935C7.68054 0.538411 7.04738 0.538411 6.65685 0.928935L0.292892 7.2929ZM41 7L1 7L1 9L41 9L41 7Z"/>
+							</svg>
+							Пред
+						</div>
+						<div class="header__slider-btn" data-direction="next" onclick="switchSlide(this)">
+							След
+							<svg width="41" height="16" viewBox="0 0 41 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path class="slider-arrow" d="M40.7071 8.70711C41.0976 8.31659 41.0976 7.68342 40.7071 7.2929L34.3431 0.928938C33.9526 0.538414 33.3195 0.538414 32.9289 0.928938C32.5384 1.31946 32.5384 1.95263 32.9289 2.34315L38.5858 8.00001L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM-1.74846e-07 9L40 9.00001L40 7.00001L1.74846e-07 7L-1.74846e-07 9Z"/>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="social">
+			<div class="social__title">Контактная информация</div>
+			<div class="social__line"></div>
+			<a href="#" class="social__icon">
+				<i class="fab fa-instagram"></i>
+			</a>
+			<a href="#" class="social__icon">
+				<i class="fab fa-facebook-f"></i>
+			</a>
+			<a href="#" class="social__icon">
+				<i class="fab fa-vk"></i>
+			</a>
+			<a href="#" class="social__icon">
+				<i class="fab fa-youtube"></i>
+			</a>
+			<div id="socialArrow" class="social__arrow">
+				<i class="fas fa-chevron-up"></i>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="teather" id="teather">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2><span>О</span> театре</h2>
+					</div>
+					<div class="col-12 col-md-8 col-lg-5">
+						<h3>Самый лучший театр</h3>
+						<p>
+							Как свидетельствуют архивные документы, первое каменное здание Большого театра начали возводить в 1775 году по проекту Антонио Ринальди. В дальнейшем, после того как Ринальди упал с лесов и не мог лично наблюдать за ходом работ, Екатерина II поручила немецкому театральному декоратору и архитектору Людвигу Филиппу Тишбейну создать новый проект театра, который и был воплощён архитекторами Ф. В. фон Бауром и М. А. Деденёвым. Открытие его состоялось в 1783 году, хотя, основываясь на других свидетельствах, годом открытия можно считать 1784 год.
+						</p>
+					</div>
+					<div class="col-12 col-md-4 col-lg-3">
+						<h3>Немного о цифрах</h3>
+						<div class="teather__icons-wrap">
+							<div>
+								<img src="img/teather-icon01.svg" alt="Icon">
+								<div class="teather__text"><span>1600</span> посадочный мест</div>
+							</div>
+							
+							<div>
+								<img src="img/teather-icon02.svg" alt="Icon">
+								<div class="teather__text"><span>350</span> лет истории</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="col-4 d-none d-lg-block">
+						<img class="teather__img" src="img/teather.jpg" alt="Teather">
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="production" class="production">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2><span>Наши</span> постановки</h2>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid p-0">
+				<div class="slider">
+					<div class="d-none d-md-block slider__item">
+						<div class="slider__empty"></div>		
+					</div>
+					<div class="slider__item">
+						<div class="slider__box">
+							<div class="slider__title">Оскар 2020</div>
+							<div class="slider__date">сентябрь 2020</div>
+							<div class="slider__hover">
+								<i class="fas fa-search"></i>
+							</div>
+						</div>		
+						<img src="img/slide01.jpg">
+					</div>
+
+					<div class="slider__item">
+						<div class="slider__box">
+							<div class="slider__title">Оскар 2020</div>
+							<div class="slider__date">сентябрь 2020</div>
+							<div class="slider__hover">
+								<i class="fas fa-search"></i>
+							</div>
+						</div>
+						<img src="img/slide02.jpg">
+					</div>
+
+					<div class="slider__item">
+						<div class="slider__box">
+							<div class="slider__title">Золотой грамофон</div>
+							<div class="slider__date">июль 2020</div>
+							<div class="slider__hover">
+								<i class="fas fa-search"></i>
+							</div>
+						</div>
+						<img src="img/slide03.jpg">
+					</div>
+
+					<div class="slider__item">
+						<div class="slider__box">
+							<div class="slider__title">Щелкунчик</div>
+							<div class="slider__date">май 2020</div>
+							<div class="slider__hover">
+								<i class="fas fa-search"></i>
+							</div>
+						</div>
+						<img src="img/slide04.jpg">
+					</div>
+
+					<div class="slider__item">
+						<div class="slider__box">
+							<div class="slider__title">Оскар 2020</div>
+							<div class="slider__date">сентябрь 2020</div>
+							<div class="slider__hover">
+								<i class="fas fa-search"></i>
+							</div>
+						</div>
+						<img src="img/slide01.jpg">
+					</div>
+
+					<div class="slider__item">
+						<div class="slider__box">
+							<div class="slider__title">Золотой грамофон</div>
+							<div class="slider__date">июль 2020</div>
+							<div class="slider__hover">
+								<i class="fas fa-search"></i>
+							</div>
+						</div>
+						<img src="img/slide03.jpg">
+					</div>
+
+					<div class="slider__item">
+						<div class="slider__box">
+							<div class="slider__title">Щелкунчик</div>
+							<div class="slider__date">май 2020</div>
+							<div class="slider__hover">
+								<i class="fas fa-search"></i>
+							</div>
+						</div>
+						<img src="img/slide04.jpg">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="rating" id="rating">
+			<div class="container" style="background: linear-gradient(0deg, rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.9)), url(img/ages-bg.jpg) center/cover;">
+				<div class="row">
+					<div class="col-4 offset-md-1 col-md-3 offset-lg-2 col-xl-2">
+						<div class="rating__age">2018</div>
+						<div class="rating__age">2018</div>
+						<div class="rating__age">2018</div>
+					</div>
+					<div class="col-8 offset-lg-1 col-lg-6">
+						<div class="rating__stars-wrap">
+							<div class="rating__star">
+								<img src="img/star.svg" alt="*">
+							</div>
+							<div class="rating__star">
+								<img src="img/star.svg" alt="*">
+							</div>
+							<div class="rating__star">
+								<img src="img/star.svg" alt="*">
+							</div>
+							<div class="rating__star">
+								<img src="img/star.svg" alt="*">
+							</div>
+							<div class="rating__star">
+								<img src="img/star.svg" alt="*">
+							</div>
+						</div>
+						<div class="rating__text">
+							Лучший театр<br> по мнению театральных критиков Парижа
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="partners" id="partners">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2><span>Партнеры</span> театра</h2>
+					</div>
+					<div class="col-12 partners__wrap">
+						<div>
+							<img src="img/sponsor-logo.svg" alt="Partner">
+							<img src="img/sponsor-logo.svg" alt="Partner">
+						</div>
+						<div>
+							<img src="img/sponsor-logo.svg" alt="Partner">
+							<img src="img/sponsor-logo.svg" alt="Partner">
+						</div>
+						<div>
+							<img src="img/sponsor-logo.svg" alt="Partner">
+							<img src="img/sponsor-logo.svg" alt="Partner">
+						</div>
+						<div>
+							<img src="img/sponsor-logo.svg" alt="Partner">
+							<img src="img/sponsor-logo.svg" alt="Partner">
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contacts" id="contacts">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2><span>Стать</span> меценатом</h2>
+					</div>
+					<div class="order-2 order-xl-1 col-xl-3 col-12 contacts__wrap">
+						<div>
+							<div class="contacts__text"><a href="tel:+78121234555">+7 (812) 123-45-55</a></div>
+							<div class="contacts__text"><a href="tel:+78121234555">+7 (812) 123-45-66</a></div>
+						</div>
+						<div>
+							<div class="contacts__text">info@theater.ru</div>
+							<div class="contacts__text">г. санкт-петербург, невский 140</div>
+						</div>
+					</div>
+					<div class="order-1 order-xl-2 offset-xl-1 col-xl-8 col-12">
+						<form action="" class="form">
+							<div class="form__input">
+								<input type="text" name="name" placeholder="Имя">
+								<input type="text" name="phone" placeholder="Телефон">
+							</div>
+							<div class="form__input">
+								<input type="text" name="company" placeholder="Компания">
+								<input type="text" name="email" placeholder="E-mail">
+							</div>
+							<div class="form__area">
+								<textarea placeholder="Сообщение"></textarea>
+							</div>
+							<div class="form__text">
+								* Ваши данные не будут переданы третьим лицам, 100% вероятность. Конфиденциальность мы гарантируем, и защищаем персональные данные согласно законку ФЗ-52.
+							</div>
+							<div class="form__button">
+								<button type="submit">Отправить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+    <footer class="footer">
+        <div class="container px-0">
+            <div class="footer__wrap">
+                <div>(с) Все права защищены. Большой театр. 2021</div>
+                <div>Сверстано Евгением</div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.min.js"></script>
+</body>
+</html>
